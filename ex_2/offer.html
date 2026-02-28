@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Offers</title>
+
+<style>
+/* Make footer stick to bottom */
+html, body{
+    height:100%;
+}
+
+/* Body */
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    display:flex;
+    flex-direction:column;
+}
+
+/* Header */
+header{
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* Navigation */
+nav{
+    background:#2d3436;
+}
+nav ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:center;
+}
+nav ul li a{
+    color:white;
+    padding:15px 30px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+nav ul li a:hover{
+    background:#fdcb6e;
+    color:black;
+}
+
+/* Section */
+section{
+    padding:40px;
+    text-align:center;
+    flex:1;   /* IMPORTANT: pushes footer down */
+}
+
+/* Offer Cards */
+article{
+    background: linear-gradient(to bottom, #ffffff, #ffeaa7);
+    width:260px;
+    display:inline-block;
+    margin:15px;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 8px 15px rgba(0,0,0,0.25);
+    transition:transform 0.3s;
+}
+article:hover{
+    transform:scale(1.08);
+}
+
+article h3{
+    color:#d63031;
+}
+
+.discount{
+    font-size:22px;
+    color:#0984e3;
+    font-weight:bold;
+}
+
+/* Footer */
+footer{
+    background: linear-gradient(90deg, #6c5ce7, #341f97);
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🔥 Special Offers</h1>
+<p>Grab exciting discounts today!</p>
+</header>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="offers.html">Offers</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<section>
+<article>
+<h3>Wireless Headphones</h3>
+<p class="discount">10% OFF</p>
+<p>Limited time deal on premium headphones.</p>
+</article>
+
+<article>
+<h3>Smart Watch</h3>
+<p class="discount">15% OFF</p>
+<p>Special discount on fitness smart watches.</p>
+</article>
+
+<article>
+<h3>Bluetooth Speaker</h3>
+<p class="discount">20% OFF</p>
+<p>Enjoy powerful sound at lower prices.</p>
+</article>
+</section>
+
+<footer>
+<p>© 2025 Online Shopping Store</p>
+</footer>
+
+</body>
+</html>

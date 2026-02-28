@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Colorful E-Commerce Website</title>
+
+<style>
+/* Global */
+body{
+    margin:0;
+    font-family:'Segoe UI', Arial;
+    background:linear-gradient(to right, #fbc2eb, #a6c1ee);
+}
+
+/* Header */
+header{
+    background:linear-gradient(90deg, #ff512f, #dd2476);
+    color:white;
+    padding:30px;
+    text-align:center;
+}
+
+/* Navigation */
+nav{
+    background:#2c2c54;
+}
+nav ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:center;
+}
+nav ul li a{
+    color:white;
+    padding:15px 30px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+nav ul li a:hover{
+    background:#34ace0;
+    color:black;
+}
+
+/* Layout */
+main{
+    display:flex;
+    padding:20px;
+}
+
+/* Section */
+section{
+    width:75%;
+    background:rgba(255,255,255,0.9);
+    border-radius:15px;
+    padding:25px;
+    margin-right:20px;
+}
+
+/* Product Cards */
+article{
+    background:linear-gradient(to bottom, #fff, #f1f2f6);
+    border-radius:15px;
+    padding:20px;
+    margin-bottom:25px;
+    box-shadow:0 8px 15px rgba(0,0,0,0.2);
+    transition:transform 0.3s;
+}
+article:hover{
+    transform:scale(1.05);
+}
+article h3{
+    color:#6a0572;
+}
+
+/* Price */
+.price{
+    color:#e84393;
+    font-size:18px;
+    font-weight:bold;
+}
+
+/* Figure */
+figure{
+    text-align:center;
+}
+figure img{
+    width:150px;        /* reduce size here */
+    height:auto;        /* keeps image ratio */
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+figcaption{
+    color:#555;
+    font-style:italic;
+}
+
+/* Table */
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:30px;
+}
+th, td{
+    padding:12px;
+    border:1px solid #777;
+}
+thead{
+    background:#00cec9;
+    color:black;
+}
+tbody{
+    background:#dfe6e9;
+}
+tfoot{
+    background:#81ecec;
+    font-weight:bold;
+}
+
+/* Aside */
+aside{
+    width:25%;
+    background:linear-gradient(to bottom, #feca57, #ff9f43);
+    padding:20px;
+    border-radius:15px;
+    color:#2d3436;
+    box-shadow:0 8px 15px rgba(0,0,0,0.2);
+}
+aside h3{
+    color:#6d214f;
+    text-align:center;
+}
+aside ul li{
+    margin:10px 0;
+    font-weight:bold;
+}
+
+/* Footer */
+footer{
+    background:linear-gradient(90deg, #341f97, #5f27cd);
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header id="home">
+<h1> Online Shopping Store</h1>
+<p>Colorful Deals • Quality Products • Best Prices</p>
+</header>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="offer.html">Offers</a></li>
+<li><a href="about.html">about</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<main>
+
+<section id="products">
+<h2>🛍 Available Products</h2>
+
+<article>
+<h3>Wireless Headphones</h3>
+<figure>
+<img src="wirelessphone.jpg" alt="Headphones">
+<figcaption>Premium Wireless Headphones</figcaption>
+</figure>
+<p class="price">₹2,499</p>
+<p>Experience crystal clear sound with noise cancellation.</p>
+</article>
+
+<article>
+<h3>Smart Watch</h3>
+<figure>
+<img src="smartwatch.jpg" alt="Smart Watch">
+<figcaption>Smart Fitness Watch</figcaption>
+</figure>
+<p class="price">₹3,999</p>
+<p>Track your fitness, heart rate, and daily activities.</p>
+</article>
+
+<h2 id="pricelist">📊 Product Price Table</h2>
+
+<table>
+<thead>
+<tr>
+<th>Product</th>
+<th>Category</th>
+<th>Price</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Wireless Headphones</td>
+<td>Audio</td>
+<td>₹2,499</td>
+</tr>
+<tr>
+<td>Smart Watch</td>
+<td>Wearable</td>
+<td>₹3,999</td>
+</tr>
+</tbody>
+
+<tfoot>
+<tr>
+<td colspan="2">Total Products</td>
+<td>2</td>
+</tr>
+</tfoot>
+</table>
+</section>
+
+<aside id="offers">
+<h3>🔥 Special Offers</h3>
+<ul>
+<li>🎉 10% Discount Today</li>
+<li>🚚 Free Home Delivery</li>
+<li>💳 Easy EMI Available</li>
+<li>⭐ Festival Sale Live</li>
+</ul>
+</aside>
+
+</main>
+
+<footer id="contact">
+<p>Email: support@onlineshop.com | Phone: +91 98765 43210</p>
+<p>© 2025 Online Shopping Store</p>
+</footer>
+
+</body>
+</html>

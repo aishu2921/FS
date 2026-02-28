@@ -1,0 +1,53 @@
+index.html <!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Student Mark Analyzer</title> 
+    <style>         body { 
+            font-family: Arial, sans-serif;             text-align: center;             margin-top: 50px; 
+        }         input, button {             padding: 10px;             margin: 5px; 
+        } 
+        #results {             margin-top: 20px; 
+        } 
+    </style> 
+</head> 
+<body> 
+ 
+    <h1>Student Mark Analyzer</h1> 
+ 
+    <input type="number" id="markInput" placeholder="Enter Mark"> 
+    <button id="addBtn">Add Mark</button> 
+ 
+    <div id="results"></div> 
+ 
+    <script>         const marks = []; 
+        const input = document.getElementById("markInput");         const button = document.getElementById("addBtn"); 
+        const resultsDiv = document.getElementById("results"); 
+ 
+        button.addEventListener("click", function() {             const mark = Number(input.value);             if (mark >= 0 && mark <= 100) { 
+                marks.push(mark);                 input.value = "";                 analyzeMarks(); 
+            } else { 
+                alert("Enter a valid mark (0-100)"); 
+            } 
+        }); 
+ 
+        function analyzeMarks() {             let total = 0;             let highest = marks[0]; 
+            let lowest = marks[0]; 
+ 
+            for (let m of marks) {                 total += m;                 if (m > highest) highest = m;                 if (m < lowest) lowest = m; 
+            } 
+ 
+            const average = (total / marks.length).toFixed(2); 
+ 
+            resultsDiv.innerHTML = ` 
+                <p>Marks Entered: ${marks.join(", ")}</p> 
+                <p>Total Marks: ${total}</p> 
+                <p>Average Marks: ${average}</p> 
+                <p>Highest Marks: ${highest}</p> 
+                <p>Lowest Marks: ${lowest}</p> 
+            `; 
+        } 
+    </script> 
+ 
+</body> 
+</html

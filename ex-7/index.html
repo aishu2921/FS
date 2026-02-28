@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Notes Saver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Notes Saver </h1>
+
+    <div class="input-container">
+        <textarea id="noteInput" placeholder="Enter your note here..."></textarea><br>
+        <button id="saveBtn">Save Note</button>
+        <button id="clearBtn">Clear All</button>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="🔍 Search notes..." onkeyup="filterNotes()">
+    </div>
+
+    <h2>Saved Notes:</h2>
+    <div id="notesList"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
